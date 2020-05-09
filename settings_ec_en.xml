@@ -1,1 +1,69 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<DataList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Datas>
+    <Data>
+      <Selected>true</Selected>
+      <Name>eBay</Name>
+      <Url>https://www.ebay.com/sch/i.html?_from=R40&amp;_nkw=#WORD_UTF8#&amp;_sacat=0&amp;LH_BIN=1&amp;_sop=10</Url>
+      <JavaScript>var domain = window.location.protocol + '//' + document.domain;
+var items = document.querySelectorAll("#srp-river-main .srp-results &gt; li");
+var results = [];
+items.forEach(value =&gt; {
+  results.push({
+    "Id": value.querySelector(".s-item__image a").getAttribute("href").split("?")[0],
+    "Name": value.querySelector(".s-item__image-img").getAttribute("alt"),
+    "Update": value.querySelector(".s-item__price").innerText,
+    "ImageUrl": value.querySelector(".s-item__image-img").getAttribute("src"),
+    "Url": value.querySelector(".s-item__image a").getAttribute("href"),
+  });
+});
+JSON.stringify(results, undefined, 2);</JavaScript>
+      <IntervalSeconds>30</IntervalSeconds>
+      <ShowUpdateChange>true</ShowUpdateChange>
+      <NotifyFirstTime>false</NotifyFirstTime>
+    </Data>
+    <Data>
+      <Selected>true</Selected>
+      <Name>Mercari</Name>
+      <Url>https://www.mercari.com/search/?facets=2&amp;keyword=#WORD_UTF8#&amp;sortBy=2</Url>
+      <JavaScript>var domain = window.location.protocol + '//' + document.domain;
+var items = document.querySelectorAll("[class*=Grid2__CellWrapper] &gt; div");
+var results = [];
+items.forEach(value =&gt; {
+  var json = JSON.parse(value.querySelector("script").innerText);
+	results.push({
+		"Id": json.offers.url,
+		"Name": json.name,
+		"Update": "$" + json.offers.price,
+		"ImageUrl": json.image,
+		"Url": domain + json.offers.url,
+	});
+});
+JSON.stringify(results, undefined, 2);</JavaScript>
+      <IntervalSeconds>30</IntervalSeconds>
+      <ShowUpdateChange>true</ShowUpdateChange>
+      <NotifyFirstTime>false</NotifyFirstTime>
+    </Data>
+    <Data>
+      <Selected>true</Selected>
+      <Name>POSHMARK</Name>
+      <Url>https://poshmark.com/search?query=#WORD_UTF8#&amp;sort_by=added_desc</Url>
+      <JavaScript>var domain = window.location.protocol + '//' + document.domain;
+var items = document.querySelectorAll("#content .main__column &gt; .m--t--1 &gt; .tile");
+var results = [];
+items.forEach(value =&gt; {
+  results.push({
+    "Id": value.querySelector(".card &gt; a").getAttribute("href"),
+    "Name": value.querySelector(".tile__title").innerText,
+    "Update": value.querySelector(".p--t--1").innerText,
+    "ImageUrl": value.querySelector(".img__container img").getAttribute("data-src"),
+    "Url": domain + value.querySelector(".card &gt; a").getAttribute("href"),
+  });
+});
+JSON.stringify(results, undefined, 2);</JavaScript>
+      <IntervalSeconds>30</IntervalSeconds>
+      <ShowUpdateChange>true</ShowUpdateChange>
+      <NotifyFirstTime>false</NotifyFirstTime>
+    </Data>
+  </Datas>
+</DataList>

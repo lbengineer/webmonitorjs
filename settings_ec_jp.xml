@@ -90,7 +90,7 @@ JSON.stringify(results, undefined, 2);</JavaScript>
       <NotifyFirstTime>false</NotifyFirstTime>
     </Data>
     <Data>
-      <Selected>false</Selected>
+      <Selected>true</Selected>
       <Name>ヤフオク</Name>
       <Url>https://auctions.yahoo.co.jp/search/search?min=0&amp;max=100000&amp;price_type=bidorbuyprice&amp;p=#WORD_UTF8#&amp;va=#WORD_UTF8#&amp;price_type=bidorbuyprice&amp;exflg=1&amp;b=1&amp;n=100&amp;s1=new&amp;o1=d&amp;mode=1&amp;xxx=#DATE#</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;

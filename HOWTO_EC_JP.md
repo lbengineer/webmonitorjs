@@ -23,8 +23,8 @@
 それでは、フリマサイトを監視する手順を以下で説明していきます。
 
 ## まずはWebMonitorJSをインストールする
-「WebMonitorJS」はMicrosoftStoreで配信している、Windows10向けのアプリケーションです。
-こちらは有料アプリとなっていますが、7日間は無料で使用できるため、お試しで使用することができます。
+「WebMonitorJS」はMicrosoftStoreで配信している、Windows10向けのアプリケーションです。  
+こちらは有料アプリとなっていますが、7日間は無料で使用できるため、お試しで使用することができます。  
 以下のページ上部にある「無料試用版」からインストールしてください。  
 [https://www.microsoft.com/ja-jp/p/webmonitorjs/9p29hwb7rx0r?cid=msft_web_chart&activetab=pivot:overviewtab](https://www.microsoft.com/ja-jp/p/webmonitorjs/9p29hwb7rx0r?cid=msft_web_chart&activetab=pivot:overviewtab)
 

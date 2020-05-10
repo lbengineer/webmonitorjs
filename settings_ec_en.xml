@@ -3,7 +3,7 @@
   <Datas>
     <Data>
       <Selected>true</Selected>
-      <Name>eBay</Name>
+      <Name>eBay (May 2020)</Name>
       <Url>https://www.ebay.com/sch/i.html?_from=R40&amp;_nkw=#WORD_UTF8#&amp;_sacat=0&amp;LH_BIN=1&amp;_sop=10</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var items = document.querySelectorAll("#srp-river-main .srp-results &gt; li");
@@ -24,7 +24,7 @@ JSON.stringify(results, undefined, 2);</JavaScript>
     </Data>
     <Data>
       <Selected>true</Selected>
-      <Name>Mercari</Name>
+      <Name>Mercari (May 2020)</Name>
       <Url>https://www.mercari.com/search/?facets=2&amp;keyword=#WORD_UTF8#&amp;sortBy=2</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var items = document.querySelectorAll("[class*=Grid2__CellWrapper] &gt; div");
@@ -46,7 +46,7 @@ JSON.stringify(results, undefined, 2);</JavaScript>
     </Data>
     <Data>
       <Selected>true</Selected>
-      <Name>POSHMARK</Name>
+      <Name>POSHMARK (May 2020)</Name>
       <Url>https://poshmark.com/search?query=#WORD_UTF8#&amp;sort_by=added_desc</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var items = document.querySelectorAll("#content .main__column &gt; .m--t--1 &gt; .tile");

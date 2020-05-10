@@ -3,7 +3,7 @@
   <Datas>
     <Data>
       <Selected>true</Selected>
-      <Name>メルカリ</Name>
+      <Name>メルカリ (2020年5月)</Name>
       <Url>https://www.mercari.com/jp/search/?keyword=#WORD_UTF8#&amp;xxx=#DATE#</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var items = document.querySelectorAll(".items-box-content &gt; .items-box");
@@ -25,7 +25,7 @@ JSON.stringify(results, undefined, 2);</JavaScript>
     </Data>
     <Data>
       <Selected>true</Selected>
-      <Name>ラクマ</Name>
+      <Name>ラクマ (2020年5月)</Name>
       <Url>https://fril.jp/search/#WORD_UTF8#?order=desc&amp;sort=item_id&amp;transaction=selling</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var items = document.querySelectorAll(".item-list .item");
@@ -46,7 +46,7 @@ JSON.stringify(results, undefined, 2);</JavaScript>
     </Data>
     <Data>
       <Selected>true</Selected>
-      <Name>PayPayフリマ</Name>
+      <Name>PayPayフリマ (2020年5月)</Name>
       <Url>https://paypayfleamarket.yahoo.co.jp/search/#WORD_UTF8#?open=1&amp;xxxx=#DATE#</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var items = document.querySelectorAll("main [class*=ItemThumbnails] a");
@@ -68,7 +68,29 @@ JSON.stringify(results, undefined, 2);
     </Data>
     <Data>
       <Selected>true</Selected>
-      <Name>オタマート</Name>
+      <Name>ヤフオク (2020年5月)</Name>
+      <Url>https://auctions.yahoo.co.jp/search/search?min=0&amp;max=100000&amp;price_type=bidorbuyprice&amp;p=#WORD_UTF8#&amp;va=#WORD_UTF8#&amp;price_type=bidorbuyprice&amp;exflg=1&amp;b=1&amp;n=100&amp;s1=new&amp;o1=d&amp;mode=1&amp;xxx=#DATE#</Url>
+      <JavaScript>var domain = window.location.protocol + '//' + document.domain;
+var items = document.querySelectorAll(".Products__items &gt; .Product");
+var results = [];
+items.forEach(value =&gt; {
+  results.push({
+    "Id": value.querySelector("h3  a").getAttribute("href"),
+    "Name": value.querySelector("h3").innerText,
+    "Update": value.querySelector(".Product__price:last-child &gt; .Product__priceValue").innerText,
+    "ImageUrl": value.querySelector(".Product__imageData").getAttribute("src"),
+    "Url": domain + value.querySelector("h3 a").getAttribute("href"),
+  });
+});
+JSON.stringify(results, undefined, 2);
+</JavaScript>
+      <IntervalSeconds>30</IntervalSeconds>
+      <ShowUpdateChange>true</ShowUpdateChange>
+      <NotifyFirstTime>false</NotifyFirstTime>
+    </Data>
+    <Data>
+      <Selected>true</Selected>
+      <Name>オタマート (2020年5月)</Name>
       <Url>https://otamart.com/search/?keyword=#WORD_UTF8#</Url>
       <JavaScript>var domain = window.location.protocol + '//' + document.domain;
 var icon = domain + document.querySelector("link[rel='icon']").getAttribute("href");
@@ -85,28 +107,6 @@ items.forEach(value =&gt; {
 	});
 });
 JSON.stringify(results, undefined, 2);</JavaScript>
-      <IntervalSeconds>30</IntervalSeconds>
-      <ShowUpdateChange>true</ShowUpdateChange>
-      <NotifyFirstTime>false</NotifyFirstTime>
-    </Data>
-    <Data>
-      <Selected>true</Selected>
-      <Name>ヤフオク</Name>
-      <Url>https://auctions.yahoo.co.jp/search/search?min=0&amp;max=100000&amp;price_type=bidorbuyprice&amp;p=#WORD_UTF8#&amp;va=#WORD_UTF8#&amp;price_type=bidorbuyprice&amp;exflg=1&amp;b=1&amp;n=100&amp;s1=new&amp;o1=d&amp;mode=1&amp;xxx=#DATE#</Url>
-      <JavaScript>var domain = window.location.protocol + '//' + document.domain;
-var items = document.querySelectorAll(".Products__items &gt; .Product");
-var results = [];
-items.forEach(value =&gt; {
-  results.push({
-    "Id": value.querySelector("h3  a").getAttribute("href"),
-    "Name": value.querySelector("h3").innerText,
-    "Update": value.querySelector(".Product__price:last-child &gt; .Product__priceValue").innerText,
-    "ImageUrl": value.querySelector(".Product__imageData").getAttribute("src"),
-    "Url": domain + value.querySelector("h3 a").getAttribute("href"),
-  });
-});
-JSON.stringify(results, undefined, 2);
-</JavaScript>
       <IntervalSeconds>30</IntervalSeconds>
       <ShowUpdateChange>true</ShowUpdateChange>
       <NotifyFirstTime>false</NotifyFirstTime>

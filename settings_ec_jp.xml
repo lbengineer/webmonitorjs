@@ -79,7 +79,7 @@ items.forEach(value =&gt; {
     "Name": value.querySelector("h3").innerText,
     "Update": value.querySelector(".Product__price:last-child &gt; .Product__priceValue").innerText,
     "ImageUrl": value.querySelector(".Product__imageData").getAttribute("src"),
-    "Url": domain + value.querySelector("h3 a").getAttribute("href"),
+    "Url": value.querySelector("h3 a").getAttribute("href"),
   });
 });
 JSON.stringify(results, undefined, 2);

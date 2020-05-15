@@ -19,8 +19,8 @@ Now, I will explain the procedure to monitor the flea market websites.
 ## First, install "WebMonitorJS"
 "WebMonitorJS" is an application for Windows 10 distributed by Microsoft Store.  
 This is a paid app, but you can use it for a trial because it can be used for free for 7 days.  
-Please install from the "Free Trial" at the top of the page below.
-[https://www.microsoft.com/en-us/p/webmonitorjs/9p29hwb7rx0r?cid=msft_web_chart&rtc=1&activetab=pivot:overviewtab](https://www.microsoft.com/en-us/p/webmonitorjs/9p29hwb7rx0r?cid=msft_web_chart&rtc=1&activetab=pivot:overviewtab)
+Please install from the "Free Trial" at the top of the page below.  
+[https://www.microsoft.com/store/apps/9P29HWB7RX0R](https://www.microsoft.com/store/apps/9P29HWB7RX0R)
 
 ## There are only three steps for a famous flea market websites!
 With the following famous flea market websites, you can set the monitoring just by loading the default settings.  

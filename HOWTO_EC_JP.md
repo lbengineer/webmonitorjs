@@ -26,7 +26,7 @@
 「WebMonitorJS」はMicrosoftStoreで配信している、Windows10向けのアプリケーションです。  
 こちらは有料アプリとなっていますが、7日間は無料で使用できるため、お試しで使用することができます。  
 以下のページ上部にある「無料試用版」からインストールしてください。  
-[https://www.microsoft.com/ja-jp/p/webmonitorjs/9p29hwb7rx0r?cid=msft_web_chart&activetab=pivot:overviewtab](https://www.microsoft.com/ja-jp/p/webmonitorjs/9p29hwb7rx0r?cid=msft_web_chart&activetab=pivot:overviewtab)
+[https://www.microsoft.com/store/apps/9P29HWB7RX0R](https://www.microsoft.com/store/apps/9P29HWB7RX0R)
 
 ## 有名なフリマサイトなら手順は3つだけ！
 以下の有名なフリマサイトであれば、デフォルトの設定を読み込むだけで監視の設定が行われます。  

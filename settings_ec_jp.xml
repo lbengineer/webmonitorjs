@@ -55,7 +55,7 @@ items.forEach(value =&gt; {
 	results.push({
 		"Id": value.getAttribute("href"),
 		"Name": value.querySelector("img").getAttribute("alt"),
-		"Update": value.querySelector("p").innerText,
+		"Update": value.querySelector("[class*=ItemThumbnail__Price]").innerText,
 		"ImageUrl": value.querySelector("img").getAttribute("src"),
 		"Url": domain + value.getAttribute("href"),
 	});
